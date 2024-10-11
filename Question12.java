@@ -11,9 +11,9 @@ public class Question12 {
         double num2 = input.nextDouble();
         
         System.out.println("Enter operator (+, -, *, /):");
-        String operator = input.next();  // Use next() instead of nextLine()
+        String operator = input.next();  
         
-        // Perform the operation based on the operator
+       
         if (operator.equals("+")) {
             double addition = num1 + num2;
             System.out.println("Result: " + addition);
@@ -24,7 +24,7 @@ public class Question12 {
             double multiplication = num1 * num2;
             System.out.println("Result: " + multiplication);
         } else if (operator.equals("/")) {
-            // Check for division by zero
+            
             if (num2 == 0) {
                 System.out.println("Error: Division by zero is not allowed.");
             } else {
@@ -34,6 +34,10 @@ public class Question12 {
         } else {
             System.out.println("Invalid operator. Please use +, -, *, or /.");
         }
+
+        input.close();
+    }
+}
 
         input.close();
     }
